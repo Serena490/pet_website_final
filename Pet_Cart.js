@@ -1,3 +1,4 @@
+/* Followed Youtube tutorial to make basket, Available at:https://www.youtube.com/watch?v=YeFzkC2awTM GitHub: https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.js */
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -10,7 +11,7 @@ function ready() {
         var button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
     }
-
+/* */
     var quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i]
@@ -22,7 +23,7 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
-
+/*Creates cart variable which loads up */
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
